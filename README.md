@@ -19,13 +19,17 @@ KeywordIndex  - An index number for the column of the specified keyword’s row.
 Minimum – It should be a number. If the script finds a row with higher value than this number in the specified cell by Minimumindex AND containing the keyword in the specified cell by KeywordIndex , then it will copy the values
 MinimumIndex - An index number for the column of the specified minimum’s row. Mind that, indexing starts from zero, therefore 0 = column A  
  
-#An example: 
+# An example: 
 
 After you copied the files, started the exe, you need to provide te following inputs:
 
+
 Enter the examined keywords, separate by commas : Foo   
+
 Enter the examined column index, which should be containing the keyword(s): 2
+
 Enter the minimum value: 12
+
 Enter the examined column index, which should be greather than the minimum: 10
 
 The system will search for the „Foo” word (Keyword) in the 3rd column of the table, as you provide 2 as KeyboardIndex (COUNTING STARTS FROM ZERO!). If it founds a row with the specifics above, it will check the 11th column of the row, since you provided 10 as MinimumIndex. In case if this cell contains a value which is higher than 12 (Minimum), then it will copy the row cells (A:CA) and append it to the output.xlsx file. The script will iterate this process in all of the xlsx files in the directory where you placed the exe file. 
