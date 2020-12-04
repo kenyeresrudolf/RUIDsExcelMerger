@@ -1,0 +1,2 @@
+# RUIDsExcelMerger
+This script will iterate all the rows of the first excel sheets of all xlsx files in the folder of py file. First, it checks the specified column (KeywordIndex). If it finds any of your keywords (Keyword) AND finds a value in the specified column (MinimumIndex) which is not a None and higher than the specified value (Minimum)  then it will copy this row cells (between A:CA) and append it to the file called output.xlsx.  
